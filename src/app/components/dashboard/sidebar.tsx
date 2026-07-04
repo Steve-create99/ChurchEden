@@ -3,7 +3,7 @@ import {
   Home, Users, Calendar, Megaphone,
   DollarSign, BarChart2, Receipt,
   QrCode, ClipboardList, Settings,
-  UserCog, ChevronRight, X,
+  UserCog, ChevronRight, X, Bird,
 } from "lucide-react";
 
 interface NavItem {
@@ -88,14 +88,9 @@ export function Sidebar({ isOpen, onClose, activePage, onNavigate }: SidebarProp
       >
         {/* Logo */}
         <div className="flex items-center gap-2.5 px-5 pt-6 pb-5">
-          <div
-            className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
-            style={{ background: "linear-gradient(135deg, #1A0533 0%, #2D1B69 100%)" }}
-          >
-            <span style={{ color: "#C8860A", fontSize: "15px", fontWeight: 700, fontFamily: "var(--font-display)" }}>H</span>
-          </div>
+          <Bird size={24} color="#C9931A" strokeWidth={1.8} />
           <span style={{ fontFamily: "var(--font-heading)", fontSize: "20px", fontWeight: 700, color: "#1A1A2E" }}>
-            Haven
+            ChurchEden
           </span>
           <button className="ml-auto lg:hidden" onClick={onClose}>
             <X size={18} color="#6B7280" />

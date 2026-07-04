@@ -347,9 +347,9 @@ function BrandingSection() {
           <div className="rounded-xl overflow-hidden" style={{ background: "#fff", border: "1px solid #EEEDE8" }}>
             <div className="h-10 flex items-center px-4 gap-3" style={{ background: secondary }}>
               <div className="w-5 h-5 rounded flex items-center justify-center" style={{ background: primary }}>
-                <span style={{ fontSize: "10px", fontWeight: 700, color: "#fff" }}>H</span>
+                <span style={{ fontSize: "10px", fontWeight: 700, color: "#fff" }}>CE</span>
               </div>
-              <span style={{ fontSize: "12px", fontWeight: 700, color: "#fff", fontFamily: "var(--font-label)" }}>Haven</span>
+              <span style={{ fontSize: "12px", fontWeight: 700, color: "#fff", fontFamily: "var(--font-label)" }}>ChurchEden</span>
             </div>
             <div className="p-3 flex items-center gap-2">
               <div className="flex-1 h-2 rounded-full" style={{ background: "#F0EFE9" }} />
@@ -593,7 +593,7 @@ function BillingSection() {
         <div className="flex items-start justify-between flex-wrap gap-4 mb-6">
           <div>
             <div className="flex items-center gap-2 mb-1">
-              <span style={{ fontSize: "20px", fontWeight: 700, color: DARK, fontFamily: "var(--font-heading)" }}>Haven Pro</span>
+              <span style={{ fontSize: "20px", fontWeight: 700, color: DARK, fontFamily: "var(--font-heading)" }}>ChurchEden Pro</span>
               <span className="px-2 py-0.5 rounded-full text-xs font-bold" style={{ background: `rgba(200,134,10,0.12)`, color: BRAND, fontFamily: "var(--font-label)" }}>CURRENT PLAN</span>
             </div>
             <p style={{ fontSize: "24px", fontWeight: 700, color: DARK, fontFamily: "var(--font-heading)" }}>$299<span style={{ fontSize: "14px", fontWeight: 400, color: "#9CA3AF" }}>/month</span></p>

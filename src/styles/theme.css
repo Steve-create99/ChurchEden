@@ -55,6 +55,71 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+:root {
+  /*
+   * ChurchEden ("Eden") design tokens — scoped, namespaced palette used
+   * exclusively by the Landing Page and Onboarding flow. These extend the
+   * theme without altering any existing token above, so the rest of the
+   * app (Dashboard, shared UI primitives, etc.) is unaffected.
+   */
+  --font-eden: 'Plus Jakarta Sans', sans-serif;
+
+  /* ChurchEden brand gold */
+  --eden-primary: #e3b34d;
+  --eden-primary-container: #c9931a;
+  --eden-on-primary: #3a2600;
+  --eden-on-primary-container: #ffffff;
+  --eden-primary-fixed: #f5dfa6;
+  --eden-primary-fixed-dim: #e3b34d;
+  --eden-on-primary-fixed: #3a2600;
+  --eden-on-primary-fixed-variant: #6b4a00;
+  --eden-inverse-primary: #8a6200;
+
+  --eden-secondary: #fff9ef;
+  --eden-secondary-container: #ffdb3c;
+  --eden-on-secondary: #3a3000;
+  --eden-on-secondary-container: #725f00;
+  --eden-secondary-fixed: #ffe16d;
+  --eden-secondary-fixed-dim: #e9c400;
+  --eden-on-secondary-fixed: #221b00;
+  --eden-on-secondary-fixed-variant: #544600;
+
+  --eden-tertiary: #cec6ad;
+  --eden-tertiary-container: #7d7761;
+  --eden-on-tertiary: #35301e;
+  --eden-on-tertiary-container: #070500;
+  --eden-tertiary-fixed: #ebe2c8;
+  --eden-tertiary-fixed-dim: #cec6ad;
+  --eden-on-tertiary-fixed: #1f1c0b;
+  --eden-on-tertiary-fixed-variant: #4c4733;
+
+  --eden-error: #ffb4ab;
+  --eden-error-container: #93000a;
+  --eden-on-error: #690005;
+  --eden-on-error-container: #ffdad6;
+
+  --eden-background: #161310;
+  --eden-on-background: #e9e1dc;
+  --eden-surface: #161310;
+  --eden-surface-dim: #161310;
+  --eden-surface-bright: #3c3835;
+  --eden-surface-tint: #adc7ff;
+  --eden-surface-variant: #383431;
+  --eden-on-surface: #e9e1dc;
+  --eden-on-surface-variant: #c1c6d6;
+  --eden-surface-container-lowest: #100e0b;
+  --eden-surface-container-low: #1e1b18;
+  --eden-surface-container: #221f1c;
+  --eden-surface-container-high: #2d2926;
+  --eden-surface-container-highest: #383431;
+
+  --eden-outline: #8b909f;
+  --eden-outline-variant: #414754;
+
+  --eden-inverse-surface: #e9e1dc;
+  --eden-inverse-on-surface: #33302c;
+}
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -131,6 +196,63 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Eden tokens (Landing Page / Onboarding scope only) */
+  --font-eden: var(--font-eden);
+
+  --color-eden-primary: var(--eden-primary);
+  --color-eden-primary-container: var(--eden-primary-container);
+  --color-eden-on-primary: var(--eden-on-primary);
+  --color-eden-on-primary-container: var(--eden-on-primary-container);
+  --color-eden-primary-fixed: var(--eden-primary-fixed);
+  --color-eden-primary-fixed-dim: var(--eden-primary-fixed-dim);
+  --color-eden-on-primary-fixed: var(--eden-on-primary-fixed);
+  --color-eden-on-primary-fixed-variant: var(--eden-on-primary-fixed-variant);
+  --color-eden-inverse-primary: var(--eden-inverse-primary);
+
+  --color-eden-secondary: var(--eden-secondary);
+  --color-eden-secondary-container: var(--eden-secondary-container);
+  --color-eden-on-secondary: var(--eden-on-secondary);
+  --color-eden-on-secondary-container: var(--eden-on-secondary-container);
+  --color-eden-secondary-fixed: var(--eden-secondary-fixed);
+  --color-eden-secondary-fixed-dim: var(--eden-secondary-fixed-dim);
+  --color-eden-on-secondary-fixed: var(--eden-on-secondary-fixed);
+  --color-eden-on-secondary-fixed-variant: var(--eden-on-secondary-fixed-variant);
+
+  --color-eden-tertiary: var(--eden-tertiary);
+  --color-eden-tertiary-container: var(--eden-tertiary-container);
+  --color-eden-on-tertiary: var(--eden-on-tertiary);
+  --color-eden-on-tertiary-container: var(--eden-on-tertiary-container);
+  --color-eden-tertiary-fixed: var(--eden-tertiary-fixed);
+  --color-eden-tertiary-fixed-dim: var(--eden-tertiary-fixed-dim);
+  --color-eden-on-tertiary-fixed: var(--eden-on-tertiary-fixed);
+  --color-eden-on-tertiary-fixed-variant: var(--eden-on-tertiary-fixed-variant);
+
+  --color-eden-error: var(--eden-error);
+  --color-eden-error-container: var(--eden-error-container);
+  --color-eden-on-error: var(--eden-on-error);
+  --color-eden-on-error-container: var(--eden-on-error-container);
+
+  --color-eden-background: var(--eden-background);
+  --color-eden-on-background: var(--eden-on-background);
+  --color-eden-surface: var(--eden-surface);
+  --color-eden-surface-dim: var(--eden-surface-dim);
+  --color-eden-surface-bright: var(--eden-surface-bright);
+  --color-eden-surface-tint: var(--eden-surface-tint);
+  --color-eden-surface-variant: var(--eden-surface-variant);
+  --color-eden-on-surface: var(--eden-on-surface);
+  --color-eden-on-surface-variant: var(--eden-on-surface-variant);
+  --color-eden-surface-container-lowest: var(--eden-surface-container-lowest);
+  --color-eden-surface-container-low: var(--eden-surface-container-low);
+  --color-eden-surface-container: var(--eden-surface-container);
+  --color-eden-surface-container-high: var(--eden-surface-container-high);
+  --color-eden-surface-container-highest: var(--eden-surface-container-highest);
+
+  --color-eden-outline: var(--eden-outline);
+  --color-eden-outline-variant: var(--eden-outline-variant);
+
+  --color-eden-inverse-surface: var(--eden-inverse-surface);
+  --color-eden-inverse-on-surface: var(--eden-inverse-on-surface);
 }
 
 @layer base {
