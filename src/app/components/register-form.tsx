@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { InputField } from "./input-field";
 import { AmberButton } from "./amber-button";
-import { User, Mail, Lock } from "lucide-react";
+import { Mail, Lock } from "lucide-react";
 
 interface RegisterFormProps {
   onSuccess: () => void;
@@ -11,7 +11,6 @@ export function RegisterForm({ onSuccess }: RegisterFormProps) {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [formData, setFormData] = useState({
-    fullName: "",
     email: "",
     password: "",
     confirmPassword: "",
@@ -63,16 +62,6 @@ export function RegisterForm({ onSuccess }: RegisterFormProps) {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <InputField
-          label="Full Name"
-          type="text"
-          placeholder="John Doe"
-          icon={<User size={18} />}
-          value={formData.fullName}
-          onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-          required
-        />
-
         <InputField
           label="Email Address"
           type="email"
